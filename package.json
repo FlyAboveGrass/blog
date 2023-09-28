@@ -1,0 +1,28 @@
+{
+  "name": "vite-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "npm run generateSideBar && vitepress dev docs",
+    "docs:build": "npm run generateSideBar && vitepress build docs",
+    "docs:preview": "npm run generateSideBar && vitepress preview docs",
+    "generateSideBar": "node docs/.vitepress/generateConfig"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.20"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7",
+    "prettier": "^3.0.3"
+  },
+  "volta": {
+    "node": "18.16.0",
+    "npm": "9.5.1"
+  }
+}
